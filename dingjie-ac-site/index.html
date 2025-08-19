@@ -31,11 +31,7 @@
     },
     "founder": { "@type": "Person", "name": "李政億" },
     "identifier": { "@type": "PropertyValue", "propertyID": "統編", "value": "60151287" },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "ratingCount": "264"
-    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "264" },
     "areaServed": ["新竹市", "竹北市", "新豐", "竹東"]
   }
   </script>
@@ -53,7 +49,7 @@
     <symbol id="i-line" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#06c755"/><path fill="#fff" d="M39 22.5c0-6.35-6.04-11.5-13.5-11.5S12 16.15 12 22.5c0 5.68 5.07 10.43 11.8 11.32.46.06.8.44.8.91v2.17c0 .78.89 1.24 1.52.78l3.68-2.67c.16-.11.36-.17.56-.17C34.66 32.1 39 27.7 39 22.5z"/></symbol>
   </svg>
 
-  <!-- Hero -->
+  <!-- Hero（無 logo slot） -->
   <header class="hero-photo-img">
     <img src="./assets/img/hero.jpg" alt="鼎杰冷氣行｜施工實景">
     <div class="container">
@@ -63,18 +59,24 @@
       <div class="hero-cta">
         <a class="btn primary" href="tel:+886905860525"><svg width="18" height="18"><use href="#i-phone"/></svg> 立即來電：0905-860-525</a>
         <a class="btn ghost" href="https://maps.app.goo.gl/BcdPzeeVZPiyzv1p9" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#i-map"/></svg> 打開 Google 地圖</a>
-        <a class="btn ghost" href="#" id="lineLink"><svg width="18" height="18"><use href="#i-line"/></svg> LINE 聯絡</a>
+        <a class="btn ghost" href="https://line.me/ti/p/xjF3ewqcZJ"><svg width="18" height="18"><use href="#i-line"/></svg> LINE 聯絡</a>
       </div>
     </div>
   </header>
 
   <main>
 
-    <!-- 服務卡片 -->
+    <!-- 服務卡片（你的 SVG 檔名 01.svg / 02.svg / 03.svg 置於專案根目錄） -->
     <section>
       <div class="container grid cols-3">
+
         <div class="card reveal">
-          <h3>保養清洗</h3>
+          <div class="card-head">
+            <div class="card-icon">
+              <img src="01.svg" alt="保養清洗 Icon">
+            </div>
+            <h3>保養清洗</h3>
+          </div>
           <p class="meta">提升效率與空氣品質，降低耗電、延長壽命。</p>
           <ul class="list">
             <li>分離式室內／室外機深度清洗</li>
@@ -82,8 +84,14 @@
             <li>保養建議與使用說明</li>
           </ul>
         </div>
+
         <div class="card reveal">
-          <h3>維修服務</h3>
+          <div class="card-head">
+            <div class="card-icon">
+              <img src="02.svg" alt="維修服務 Icon">
+            </div>
+            <h3>維修服務</h3>
+          </div>
           <p class="meta">到府檢測，先評估再報價，透明無隱藏費。</p>
           <ul class="list">
             <li>不冷、異音、跳電、漏水</li>
@@ -91,8 +99,14 @@
             <li>同品牌跨型號維修</li>
           </ul>
         </div>
+
         <div class="card reveal">
-          <h3>新機安裝</h3>
+          <div class="card-head">
+            <div class="card-icon">
+              <img src="03.svg" alt="新機安裝 Icon">
+            </div>
+            <h3>新機安裝</h3>
+          </div>
           <p class="meta">現場評估路徑與材料，工法確實、細節到位。</p>
           <ul class="list">
             <li>配管、排水、抽真空與壓測</li>
@@ -100,45 +114,34 @@
             <li>舊機拆除與環境整潔</li>
           </ul>
         </div>
+
       </div>
     </section>
 
-    <!-- 為什麼要保養 -->
+    <!-- 為什麼要保養（已移除服務承諾） -->
     <section class="section-light">
       <div class="container">
         <h2 class="reveal">為什麼要定期保養？</h2>
-        <div class="grid cols-2">
-          <div class="grid" style="gap:16px">
-            <div class="reason-outline reveal">
-              <span class="kicon">省</span>
-              <div>
-                <strong>效率提升，實際更省電</strong>
-                <p class="meta">清除熱交換面與風道髒污，降低負載、縮短運轉時間。</p>
-              </div>
-            </div>
-            <div class="reason-outline reveal">
-              <span class="kicon">淨</span>
-              <div>
-                <strong>空氣品質改善</strong>
-                <p class="meta">抑制黴菌與異味，對長輩與過敏體質更友善。</p>
-              </div>
-            </div>
-            <div class="reason-outline reveal">
-              <span class="kicon">壽</span>
-              <div>
-                <strong>延長設備壽命</strong>
-                <p class="meta">避免長期堆積導致過熱或銹蝕，降低故障率。</p>
-              </div>
+        <div class="grid cols-3">
+          <div class="reason-outline reveal">
+            <span class="kicon">省</span>
+            <div>
+              <strong>效率提升，實際更省電</strong>
+              <p class="meta">清除熱交換面與風道髒污，降低負載、縮短運轉時間。</p>
             </div>
           </div>
-
-          <div class="reveal">
-            <h3 style="margin:0 0 10px;color:#0b1220">服務承諾</h3>
-            <p class="meta" style="margin-top:-6px;color:#334155">快速回覆、清楚報價、準時到府。</p>
-            <div style="display:flex;gap:16px;flex-wrap:wrap">
-              <div class="pill-outline"><strong>24h</strong><div class="meta">可安排時段（視區域）</div></div>
-              <div class="pill-outline"><strong>事前</strong><div class="meta">明確報價</div></div>
-              <div class="pill-outline"><strong>到府</strong><div class="meta">新竹市東區</div></div>
+          <div class="reason-outline reveal">
+            <span class="kicon">淨</span>
+            <div>
+              <strong>空氣品質改善</strong>
+              <p class="meta">抑制黴菌與異味，對長輩與過敏體質更友善。</p>
+            </div>
+          </div>
+          <div class="reason-outline reveal">
+            <span class="kicon">壽</span>
+            <div>
+              <strong>延長設備壽命</strong>
+              <p class="meta">避免長期堆積導致過熱或銹蝕，降低故障率。</p>
             </div>
           </div>
         </div>
@@ -149,10 +152,9 @@
     <section class="section-soft" aria-labelledby="works">
       <div class="container">
         <h2 id="works" class="reveal">施工實景（點圖放大）</h2>
-        <p class="meta reveal">本區塊為靜態縮圖，無滑動機制，行動裝置亦可直接點開查看大圖。</p>
+        <p class="meta reveal">本區塊為靜態縮圖，行動裝置亦可直接點開查看大圖。</p>
 
         <div class="photo-grid">
-          <!-- 將 src 指向你的實際檔名 -->
           <a href="./assets/img/gallery/01.jpg" data-lightbox data-caption="安裝定位"><img src="./assets/img/gallery/01.jpg" alt="安裝定位"></a>
           <a href="./assets/img/gallery/02.jpg" data-lightbox data-caption="抽真空與壓測"><img src="./assets/img/gallery/02.jpg" alt="抽真空與壓測"></a>
           <a href="./assets/img/gallery/03.jpg" data-lightbox data-caption="室外機固定"><img src="./assets/img/gallery/03.jpg" alt="室外機固定"></a>
@@ -181,7 +183,7 @@
         <ol class="stepper">
           <li class="reveal">
             <h3>聯絡我們</h3>
-            <p>電話 <a href="tel:+886905860525">0905-860-525</a>。亦可透過 Google 地圖訊息聯絡或使用 LINE。</p>
+            <p>電話 <a href="tel:+886905860525">0905-860-525</a>。或使用 LINE：<a href="https://line.me/ti/p/xjF3ewqcZJ">連結</a>。</p>
           </li>
           <li class="reveal">
             <h3>提供基本資訊</h3>
@@ -206,7 +208,7 @@
         <div class="map-actions reveal">
           <a class="btn primary" href="https://maps.app.goo.gl/BcdPzeeVZPiyzv1p9" target="_blank" rel="noopener">在 App 開啟導航</a>
           <a class="btn ghost" href="https://www.google.com/maps?q=鼎杰冷氣行%20300034%20新竹市東區食品路328號&hl=zh-TW" target="_blank" rel="noopener">在瀏覽器開啟</a>
-          <a class="btn ghost" href="#" id="lineLink2"><svg width="18" height="18"><use href="#i-line"/></svg> LINE 聯絡</a>
+          <a class="btn ghost" href="https://line.me/ti/p/xjF3ewqcZJ"><svg width="18" height="18"><use href="#i-line"/></svg> LINE 聯絡</a>
         </div>
         <div class="map-embed reveal">
           <iframe title="鼎杰冷氣行地圖" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -220,7 +222,7 @@
   <div class="sticky-cta" role="region" aria-label="快速聯絡">
     <a class="btn primary" href="tel:+886905860525">立即來電</a>
     <a class="btn ghost" href="https://maps.app.goo.gl/BcdPzeeVZPiyzv1p9" target="_blank" rel="noopener">Google 地圖</a>
-    <a class="btn ghost" href="#" id="lineLink3">LINE 聯絡</a>
+    <a class="btn ghost" href="https://line.me/ti/p/xjF3ewqcZJ">LINE 聯絡</a>
   </div>
 
   <footer class="footer">
@@ -242,15 +244,5 @@
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   <script src="./assets/js/observe.js" defer></script>
   <script src="./assets/js/lightbox.js" defer></script>
-  <script>
-    // 統一處理 LINE 佔位連結：之後只要把 lineURL 換成正式連結
-    (function(){
-      var lineURL = "#"; // TODO: 之後改成你的 LINE 加好友/聊天連結
-      ['lineLink','lineLink2','lineLink3'].forEach(function(id){
-        var el = document.getElementById(id);
-        if (el) el.setAttribute('href', lineURL);
-      });
-    })();
-  </script>
 </body>
 </html>
